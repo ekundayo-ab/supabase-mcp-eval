@@ -29,7 +29,7 @@ What this shows:
 Read this with care:
 
 - **Small numbers.** 2 runs per model per cell. A 2/2 is a hint, not a rate.
-- **The blind baseline is harsh on purpose.** It answers "what does the agent lose without any way to look?", not "is MCP better than a human pasting the schema into the prompt". A schema-in-the-prompt condition is the obvious next one.
+- **The blind baseline is strict.** It measures what the agent loses with no way to look at the database. It does not compare MCP with pasting the schema into the prompt; that would be the next condition to add.
 - **One task set, one database.** The tasks are mine, written to need things you only learn by looking (cents, statuses, which schema is yours).
 
 Every run, one JSON line each: [results/2026-11-19.jsonl](results/2026-11-19.jsonl). The full Claude Code stream of every run: [results/raw/](results/raw/).
